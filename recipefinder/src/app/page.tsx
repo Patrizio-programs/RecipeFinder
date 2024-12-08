@@ -3,10 +3,9 @@
 import styles from "./page.module.css";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
+
 
 export default function Home() {
-  const pathname = usePathname()
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
 
